@@ -1,0 +1,28 @@
+.list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: -0;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 100%;
+}
+
+.company {
+    display: flex;
+}
+
+.timeperiod {
+    margin-right: 8px;
+}
+
+.name {
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.branche {
+    margin-left: auto;
+}

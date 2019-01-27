@@ -1,0 +1,26 @@
+.navigation {
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: 'flex-start';
+    list-style: none;
+    margin: 0;
+}
+
+.item {
+    color: white;
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: rgba(0,0,0, .2);
+    color: white;
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.item:hover {
+    background-color: rgba(255,255,255, .2);
+}

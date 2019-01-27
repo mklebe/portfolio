@@ -1,0 +1,21 @@
+.list {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: -8px;
+    width: calc(100% + 16px);
+}
+
+.item {
+    cursor: pointer;
+    flex-basis: 25%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    margin: 8px;
+    padding: 8px;
+}
+
+.item:hover {
+    background-color: rgba(102, 51, 153, .5)
+}
