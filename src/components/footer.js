@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from '@reach/router'
-import footerStyle from './footer.module.css'
+import style from './footer.module.css'
 
 const Footer = ({ siteTitle }) => (
-    <div className={footerStyle.footer}>
-        <span>Matthias Klebe GbR</span>
-        <Link to="/imprint">Imprint</Link>
+    <div className={style.footer}>
+        <Link className={style.link} to="/imprint">Imprint</Link>
     </div>
 )
 

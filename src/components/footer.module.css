@@ -4,5 +4,13 @@
     flex-direction: row;
     justify-content: flex-end;
     padding: 8px 12px;
+}
+
+.link {
     color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
