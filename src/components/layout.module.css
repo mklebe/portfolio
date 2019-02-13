@@ -1,11 +1,25 @@
 .page {
+    align-items: center;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     min-height: 100vh;
+}
+
+.page__header,
+.page__footer {
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    width: 100%
 }
 
 .page__footer {
     margin-top: auto;
-    width: 100%;
+}
+
+.c200 {
+    padding: 0 60px;
+    width: 960px;
 }

@@ -23,14 +23,18 @@ const Layout = ({ children }) => (
       <>
         <div className={layoutStyles.page}>
           <header className={layoutStyles.page__header}>
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <div className={layoutStyles.c200}>
+              <Header siteTitle={data.site.siteMetadata.title} />
+            </div>
           </header>
-          <main className={layoutStyles.page__content}>
+          <main className={layoutStyles.c200}>
             {children}
           </main>
 
           <footer className={layoutStyles.page__footer}>
-            <Footer />
+            <div className={layoutStyles.c200}>
+              <Footer className={layoutStyles.c200} />
+            </div>
           </footer>
         </div>
       </>
