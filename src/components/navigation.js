@@ -31,7 +31,7 @@ class Page {
 const pages = [
     new Page('/portfolio', 'Portfolio'),
     new Page('/runs', 'Runs'),
-    new Page('/traveling', 'Traveling'),
+    new Page('/me', 'About Me'),
 ]
 
 export default Navigation
