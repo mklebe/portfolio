@@ -3,15 +3,16 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import TechnologyList from '../components/technologyList';
-import CompanyList from '../components/companyList';
+import DataTable from '../components/dataTable';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Portfolio" keywords={[`gatsby`, `application`, `react`]} />
 
-    <CompanyList 
+    <DataTable 
         title="Companies I worked with"
-        list={companies}
+        tableHead={['Company', 'Branche', 'Timeperiod']}
+        tableBody={companies}
     />
     <TechnologyList 
         title="Technologies I worked with"
@@ -19,21 +20,12 @@ const IndexPage = () => (
 
   </Layout>
 )
-
-class Company {
-    constructor(name, branche, timeperiod) {
-        this.name = name
-        this.branche = branche
-        this.timeperiod = timeperiod
-    }
-}
-
 const companies = [
-    new Company(`Mister Spex GmbH`, `ecommerce`, `2017 - now`),
-    new Company(`unitb consulting GmbH`, `other`, `2014 - 2017`),
-    new Company(`aklamio GmbH`, `ecommerce`, `2012 - 2014`),
-    new Company(`European Students' Conference`, `education`, `2011 - 2012`),
-    new Company('excentos GmbH', `ecommerce`, `2009 - 2011`),
+    [`Mister Spex GmbH`, `ecommerce`, `2017 - now`],
+    [`unitb consulting GmbH`, `other`, `2014 - 2017`],
+    [`aklamio GmbH`, `ecommerce`, `2012 - 2014`],
+    [`European Students' Conference`, `education`, `2011 - 2012`],
+    ['excentos GmbH', `ecommerce`, `2009 - 2011`],
 ]
 
 const technologies = [
