@@ -2,32 +2,12 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import RunsList from '../components/runsList'
 
 const RunsPage = () => (
   <Layout>
     <SEO title="Portfolio" keywords={[`gatsby`, `application`, `react`]} />
-    <h2>Finished runs</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Name</th>
-          <th>Tournament</th>
-          <th>Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        {runs.map((run, idx) => {
-          return <tr key={`finishedRuns_${idx}`}>
-            <td>{run.date}</td>
-            <td>{run.name}</td>
-            <td>{run.tournament}</td>
-            <td>{run.time}</td>
-          </tr>
-        })
-        }
-      </tbody>
-    </table>
+    <RunsList title="Finished Runs" list={runs} />
   </Layout>
 )
 
