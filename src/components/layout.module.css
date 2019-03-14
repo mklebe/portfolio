@@ -23,3 +23,8 @@
     padding: 0 60px;
     width: 960px;
 }
+@media(max-width: 960px) {
+    .c200 {
+        width: 100%;
+    }
+}
