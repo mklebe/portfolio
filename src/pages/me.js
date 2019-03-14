@@ -12,6 +12,7 @@ const Me = () => (
             build a portfolio page with gatsby.</p>
         <h3>Todo:</h3>
         <ul>
+            <li>Put this Todo list in the issues section of my github project</li>
             <li>Add more text for the about page</li>
             <li>Add testing reports</li>
             <li>Unify styling</li>
